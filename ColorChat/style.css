@@ -1,0 +1,36 @@
+h1 {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: yellow;
+}
+
+.happy {
+    color: greenyellow;
+    font-family: sans-serif;
+}
+
+.sad {
+    color: red;
+    font-family: sans-serif;
+}
+
+.informative {
+    font-family: sans-serif;
+    color: black;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+.color {
+    font-family: sans-serif;
+}
+
+.dl {
+    background-color: greenyellow;
+    font-family: monospace;
+}
