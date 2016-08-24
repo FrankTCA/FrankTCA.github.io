@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><style type="text/css">#rand {
+  background-color: #0065f2;
+  border: 2px solid black;
+  border-radius: 10px;
+}</style><!--DOCYTYPE html-->
+
+  
+    <title>Get Random Number</title>
+  </head>
+  <body>
+    <div id="rand">
+      <p>Random Number Goes Here</p>
+    </div>
+    <button onclick="javascript:getRandomNumber()">Get Number</button>
+  
+<script>function getRandomNumber() {
+  var xhttp;
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    document.getElementById("rand").innerHTML = xhttp.responseText;
+  };
+  xhttp.open("GET", "http://main.xfiddle.com/414a4018/Random.php", true);
+  xhttp.send();
+}</script></body>
