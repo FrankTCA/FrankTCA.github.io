@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head><style type="text/css">h1 {
+  float: right;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 300%;
+}
+
+.head {
+  background-color: #2266FF;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul a {
+  display: block;
+  width: 60px;
+  text-decoration: none;
+  color: #CC0099;
+  padding: 8px;
+  background-color: #dddddd;
+  float: left;
+  border-right: 2px solid #111;
+}
+
+li {
+  display: inline;
+}
+
+a:hover {
+  background-color: #111;
+}
+
+body {
+  background-color: #BB88CC;
+}
+
+.bdheader {
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+
+p {
+  font-family: Arial, Helvetica, Sans-Serif;
+}</style>
+
+  
+    <title>Egypt | The Land Of The Pyramids</title>
+  </head>
+  <body>
+    <div class="head">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/All_Gizah_Pyramids.jpg" style="height: 30%; width: 20%;">
+      <h1>Egypt, The Land Of The Pyramids </h1>
+    </div>
+    <div id="selector">
+      <ul class="list">
+        <a href="javascript:displayIndex()" id="index">
+          <li>
+            Home
+          </li>
+        </a>
+        <a href="javascript:displayPyramid()" id="pyramid">
+          <li>
+            Pyramids
+          </li>
+        </a>
+        <a href="javascript:displayKarnak();">
+          <li>
+            Karnak
+          </li>
+        </a>
+        <a href="javascript:displaySphinx();">
+          <li>
+            Sphinx
+          </li>
+        </a>
+      </ul>
+    </div>
+    <div id="body"><br><h2 class="bdheader">Egypt, The Land of Monuments:</h2><p>No matter who you are, Egypt is the vacation you are looking for! There are many cool artifacts to see in Egypt. It is a vacation that you will not regret! Egypt is prefect for any history lover, and even if you don't love history, everybody likes to learn!</p></div>
+  
+<script>var body = document.getElementById("body");
+displayIndex();
+
+
+function displayIndex() {
+  body.innerHTML = "";
+  body.innerHTML = "<br><h2 class='bdheader'>Egypt, The Land of Monuments:</h2>";
+  body.innerHTML = body.innerHTML + "<p>No matter who you are, Egypt is the vacation you are looking for! There are many cool artifacts to see in Egypt. It is a vacation that you will not regret! Egypt is prefect for any history lover, and even if you don't love history, everybody likes to learn!";
+}
+
+function displayPyramid() {
+  body.innerHTML = "";
+  body.innerHTML = "<br><h2 class='bdheader'>Egypt, The Land of Pyramids:</h2>";
+  body.innerHTML = body.innerHTML + "<p>The Pyramids are what Egypt is known for. The Pyramids are what seperates Egypt from other countries. The Pyramids were built as tombs for Ancient Egyptian Pharoahs. They were massive mazes that were confusing so they can protect the bodies of the Pharoahs. The Pyramids are one of the seven wonders of the world.</p>";
+}
+
+function displayKarnak() {
+  body.innerHTML = "";
+  body.innerHTML = "<br><h2 class='bdheader'>Egypt, The Land Of The Temples:</h2>";
+  body.innerHTML = body.innerHTML + "<p>The Karnak is one of the world's largest temples. It is now a massive museum. The Karnak was once used as the main place of worship for the Egyptian's religion. It is now crumpled into ruins. As you walk through it, you can see the statues that existed in the Karnak. Definitely a must-see!</p>";
+}
+
+function displaySphinx() {
+  body.innerHTML = "";
+  body.innerHTML = "<br><h2 class='bdheader'>Egypt, the Land of the Myths:</h2>";
+  body.innerHTML = body.innerHTML + "<p>The Sphinx is quite an interesting site to see along with the Pyramids! The Sphinx was built as a tomb for a Pharoah, and the face is the exact representation of what the Pharoah looked like. A sphinx in general is a mythical creature which has the head of a human and has the body of a lion! If only normal humans could be smart and tough like The Sphinx!</p>";
+}
+</script></body>
