@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head><style type="text/css">.title {
+  display: inline-block;
+  font-family: Cambria, Georgia, serif;
+}
+
+.head {
+  margin: auto;
+  text-align: center;
+  background-color: #9933CC;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+body {
+  background-color: #CC55AA;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #55BB99;
+}
+
+ul a {
+  display: block;
+  width: 60px;
+  text-decoration: none;
+  color: #000;
+  padding: 18px 30px;
+}
+
+ul a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.selector {
+  overlow: hidden;
+  float: right;
+}
+
+h2 {
+  font-family: Cambria, Georgia, Serif;
+}
+
+p {
+  font-family: Cambria, Georgia, Serif;
+}</style>
+
+  
+    <title>The Rock Cycle</title>
+  </head>
+  <body>
+    <div class="head">
+      <img src="http://www.cotf.edu/ete/images/modules/msese/earthsysflr/EFCycleP2.gif" style="length: 10%; width: 10%" class="title">
+      <h1 class="title">The Rock Cycle</h1>
+    </div>
+    <div class="selector">
+      <ul>
+        <a href="javascript:displayIndex()">
+          <li>
+            Home
+          </li>
+        </a>
+        <a href="javascript:displayIgneous()">
+          <li>
+            Igneous
+          </li>
+        </a>
+        <a href="javascript:displaySediment()">
+          <li>
+            Sedimentary
+          </li>
+        </a>
+        <a href="javascript:displayMetamorphic()">
+          <li>
+            Metamorphic
+          </li>
+        </a>
+      </ul>
+    </div>
+    <div id="body"><h2>The World of Rocks:</h2><h2></h2><p>Most rocks have been around for millions and sometimes billions of years. Rocks have been going through the same process for their whole life on Earth. Rocks have been hot, cold, and everything in this process! It is a lot of work to be a rock!</p></div>
+  
+<script>var body = document.getElementById("body");
+displayIndex();
+
+function displayIndex() {
+  body.innerHTML = "";
+  body.innerHTML = "<h2>The World of Rocks:<h2>";
+  body.innerHTML = body.innerHTML + "<p>Most rocks have been around for millions and sometimes billions of years. Rocks have been going through the same process for their whole life on Earth. Rocks have been hot, cold, and everything in this process! It is a lot of work to be a rock!</p>";
+}
+
+function displayIgneous() {
+  body.innerHTML = "";
+  body.innerHTML = "<h2>Igneous Rocks:</h2>";
+  body.innerHTML = body.innerHTML + "<p>Igneous rocks come from volcanoes. When volcanoes erupt, they spew out molten rock. This is called lava. Before the volcano has erupted, it was called magma. When lava cools, it turns back into rock. This rock is now called an igneous rock.</p>";
+}
+
+function displaySediment() {
+  body.innerHTML = "";
+  body.innerHTML = "<h2>Sedimentary Rocks:</h2>";
+  body.innerHTML = body.innerHTML + "<p>Sedimentary rocks, hence their name, are formed by sediments. Sediments are materials such as sand that are underwater. Over hundreds or even thousands of years, the sediments will squeeeze together to become a sedimentary rock.</p>";
+}
+
+function displayMetamorphic() {
+  body.innerHTML = "";
+  body.innerHTML = "<h2>Metamorphic Rocks:</h2>";
+  body.innerHTML = body.innerHTML + "<p>Metamorphic rocks are very similar to igneous rocks. They are formed when rocks go underground and undergo a lot of heat and pressure. Metamorphic rocks do not fully melt, which makes them different from igneous rocks.</p>";
+}</script></body>
