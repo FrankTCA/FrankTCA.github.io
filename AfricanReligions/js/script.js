@@ -18,5 +18,8 @@ $(document).ready(function() {
                  function() {
                    $('.invisibleI').fadeOut(false);
                  });
+  $('#n2').click(function() {
+    $('#descriptionAreaI').slideToggle(200);
+  })
   
 });
