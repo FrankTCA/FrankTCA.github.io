@@ -20,6 +20,6 @@ $(document).ready(function() {
                  });
   $('#n2').click(function() {
     $('#descriptionAreaI').slideToggle(200);
-  })
+  });
   
 });
