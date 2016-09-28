@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('.invisibleC').hide();
   $('.invisibleI').hide();
   $('#descriptionAreaC').hide();
+  $('#descriptionAreaI').hide();
   $('#n1').hover(function() {
     $('.invisibleC').fadeIn(false);
   },
