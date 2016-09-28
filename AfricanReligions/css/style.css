@@ -1,0 +1,55 @@
+#headImg {
+  length: 100px;
+  width: 100px;
+}
+
+#header {
+  background-color: #66FFBB;
+}
+
+h1 {
+  float: right;
+  display: block;
+  font-size: 4em;
+  font-family: Arial, Serif;
+}
+
+ li {
+  list-style: none;
+  color: #66C;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  font-family: Arial, Serif;
+  background-color: #AAA;
+  position: relative;
+}
+
+ul li ul li {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  margin: 0;
+}
+
+ul li ul {
+  left: 0;
+  top: 40px;
+  width: 200px;
+}
+
+li:hover {
+  background-color: #C39;
+}
+
+p {
+  font-family: Arial, Serif;
+}
+
+h3 {
+  font-family: Arial, Serif;
+}
+
+h2 {
+  font-family: Arial, Serif;
+}
