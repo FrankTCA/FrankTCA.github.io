@@ -34,9 +34,6 @@
 
 $(document).ready(function() {
     var clicks = 0;
-if (document.cookie != null) {
-  var clicks = parseInt(document.cookie);
-}
   $('.theButton').click(function() {
     clicks = clicks + 1;
     $('.clicks').replaceWith('<p>' + clicks + '</p>');
