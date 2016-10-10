@@ -30,7 +30,7 @@
       <button class="save">Click Here to Save</button>
     </div>
   
-<script>if (document.cookie === null) {
+<script>if (document.cookie === "") {
   var clicks = 0;
 } else {
   var clicks = parseInt(document.cookie);
@@ -38,7 +38,7 @@
 
 $(document).ready(function() {
   $('.theButton').click(function() {
-    clicks++;
+    clicks = clicks + 1;
     $('.clicks').replaceWith('<p>' + clicks + '</p>');
   });
   $('.save').click(function() {
