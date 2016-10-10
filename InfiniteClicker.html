@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head><style type="text/css">.clicks {
+  background-color: #7FFFD4;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+.theButton {
+  color: #0000FF;
+}
+
+.save {
+  color: #00F;
+}
+
+.buttons {
+  text-align: center;
+}
+</style>
+
+  
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>The Excrutiating Clinking Game</title>
+  </head>
+  <body>
+    <p class="clicks">Number of Clicks Goes Here</p>
+    <div class="buttons">
+      <button class="theButton">Click Here to Add a Click</button>
+      <button class="save">Click Here to Save</button>
+    </div>
+  
+<script>if (document.cookie === null) {
+  var clicks = 0;
+} else {
+  var clicks = parseInt(document.cookie);
+}
+
+$(document).ready(function() {
+  $('.theButton').click(function() {
+    clicks++;
+    $('.clicks').replaceWith('<p>' + clicks + '</p>');
+  });
+  $('.save').click(function() {
+    document.cookie = "clickNum=" + clicks.toString() + "; expires=Tue, 1 Dec 2020 12:00:00 UTC";
+  });
+});</script></body>
