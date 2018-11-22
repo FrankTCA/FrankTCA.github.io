@@ -5,7 +5,21 @@
 </head>
 <body>
 <script type="text/javascript">
-window.location.replace("http://ec2-18-223-126-68.us-east-2.compute.amazonaws.com");
+  var weburl = "http://ec2-3-16-15-121.us-east-2.compute.amazonaws.com";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      if (this.responseText == "PROCEED") {
+        window.location.replace(weburl);
+      }
+    } else if (this.readyState = 0) {
+      document.write("<h1>Network is Currently Offline</h1><p>If you believe this is an error, please contact Frank Kearns.</p>");
+    } else {
+      document.write("<h1>Something weird is happening.</h1><p>That's all we know.</p>");
+    }
+  }
+  xhttp.open("GET", weburl + "/query.html", true);
+  xhttp.send();
 </script>
 <noscript>
 <h1>Javascript Required</h1>
