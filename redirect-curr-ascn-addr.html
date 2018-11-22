@@ -15,7 +15,7 @@
     } else if (this.readyState = 0) {
       document.write("<h1>Network is Currently Offline</h1><p>If you believe this is an error, please contact Frank Kearns.</p>");
     } else {
-      document.write("<h1>Something weird is happening.</h1><p>That's all we know.</p>");
+      alert(this.readyState + this.responseText;)
     }
   }
   xhttp.open("GET", weburl + "/query.html", true);
